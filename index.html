@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Sekolah - SMAK Stia Bakti Ruteng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #800000;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .content {
+            margin-top: 20px;
+            width: 80%;
+            text-align: left;
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .content hr {
+            border: 1px solid #333;
+            margin: 10px 0;
+        }
+
+        .info-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #800000;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+        }
+
+        .tata-tertib {
+            margin-top: 20px;
+        }
+
+        .tata-tertib h3 {
+            color: #800000;
+        }
+
+        .tata-tertib ol {
+            padding-left: 20px;
+        }
+
+        .menu-icon {
+            display: inline-block;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .header span.menu-icon {
+            order: 1;
+        }
+
+        .header div {
+            order: 2;
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+        }
+
+        .header div a {
+            flex: 1;
+            text-align: center;
+        }
+
+        .book-icon {
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        
+        
+            <a href="#" onclick="showInfo('pengertian')">Pengertian</a>
+            <a href="#" onclick="showInfo('tujuan')">Tujuan</a>
+        </div>
+        <span class="menu-icon"><i class="fas fa-book book-icon"></i></span>
+    </div>
+
+    <div class="content">
+        <h2>INFORMASI SEKOLAH</h2>
+        <hr>
+
+        <div id="pengertian" class="info-box" style="display:none;">
+            <h3>Pengertian Informasi Sekolah</h3>
+            <p>Informasi sekolah adalah semua hal yang perlu diketahui tentang sekolah, misalnya nama sekolah, alamat, visi dan misi, aturan, kegiatan, dan fasilitas yang bisa digunakan untuk belajar.</p>
+        </div>
+
+        <div id="tujuan" class="info-box" style="display:none;">
+            <h3>Tujuan Informasi Sekolah</h3>
+            <p>Tujuan informasi sekolah adalah agar siswa mengetahui identitas, aturan, fasilitas, serta kegiatan sekolah sehingga bisa belajar dengan tertib, disiplin, dan berprestasi.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Informasi Sekolah</h3>
+            <p><strong>Nama Sekolah:</strong> SMAK Setia Bakti Ruteng</p>
+            <p><strong>Alamat:</strong> Jl. Ahmad Yani No. 6, Ruteng, Flores – NTT</p>
+            <p><strong>Status:</strong> Sekolah Swasta Katolik</p>
+            <p><strong>Visi:</strong> Menjadi sekolah Katolik yang unggul dalam iman, ilmu, dan pelayanan.</p>
+            <p><strong>Misi:</strong></p>
+            <ol>
+                <li>Membentuk pribadi beriman yang berkarakter Kristiani.</li>
+                <li>Meningkatkan mutu akademik dan non-akademik.</li>
+                <li>Membina siswa agar disiplin, bertanggung jawab, dan peduli lingkungan.</li>
+                <li>Mengembangkan bakat dan minat melalui kegiatan ekstrakurikuler.</li>
+            </ol>
+            <p><strong>Fasilitas:</strong></p>
+            <ul>
+                <li>Ruang kelas lengkap dengan sarana belajar</li>
+                <li>Perpustakaan sekolah</li>
+                <li>Laboratorium IPA & Komputer</li>
+                <li>Aula dan lapangan olahraga</li>
+                <li>Ruang doa & kegiatan rohani</li>
+            </ul>
+        </div>
+
+        <div class="tata-tertib">
+            <h3>Tata Tertib Siswa SMAK Setia Bakti Ruteng</h3>
+            <p><strong>A. Kehadiran & Waktu</strong></p>
+            <ol>
+                <li>Jam masuk sekolah pukul 07.00 WITA, pulang sesuai jadwal.</li>
+                <li>Siswa wajib hadir tepat waktu dan mengikuti doa pagi bersama.</li>
+                <li>Ketidakhadiran harus disertai surat izin dari orang tua.</li>
+            </ol>
+
+            <p><strong>B. Seragam & Penampilan</strong></p>
+            <ol>
+                <li>Seragam harian, olahraga, dan batik wajib digunakan sesuai jadwal.</li>
+                <li>Siswa laki-laki berambut rapi, tidak gondrong; siswa perempuan berpenampilan sopan.</li>
+                <li>Tidak diperbolehkan memakai make-up berlebihan, cat rambut, atau aksesoris mencolok.</li>
+            </ol>
+
+            <p><strong>C. Sikap & Tata Krama</strong></p>
+            <ol>
+                <li>Menghormati guru, karyawan, dan sesama siswa.</li>
+                <li>Wajib mengikuti kegiatan rohani Katolik dan doa bersama.</li>
+                <li>Dilarang membawa rokok, minuman keras, narkoba, atau barang terlarang.</li>
+                <li>Tidak diperbolehkan menggunakan HP saat pelajaran berlangsung.</li>
+                <li>Siswa wajib menjaga kebersihan kelas, taman, dan lingkungan sekolah.</li>
+                <li>Bullying, kekerasan, atau perkelahian tidak ditoleransi.</li>
+            </ol>
+
+            <p><strong>D. Kegiatan Belajar</strong></p>
+            <ol>
+                <li>Siswa wajib membawa perlengkapan belajar setiap hari.</li>
+                <li>Tugas dan pekerjaan rumah harus dikumpulkan tepat waktu.</li>
+                <li>Dilarang mencontek dalam ulangan/ujian.</li>
+            </ol>
+
+            <p><strong>E. Sanksi</strong></p>
+            <ol>
+                <li>Teguran lisan dari guru/pembina.</li>
+                <li>Catatan pelanggaran di buku tata tertib.</li>
+                <li>Surat peringatan dan pemanggilan orang tua.</li>
+                <li>Skorsing atau tindakan lain sesuai kebijakan sekolah.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
